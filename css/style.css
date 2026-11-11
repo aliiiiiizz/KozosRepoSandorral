@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas:
+    "h h"
+    "n n"
+    "ar as";
+}
+header,nav,main,article,aside{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+}
+header {
+  grid-area: h;
+  text-align: center;
+}
+
+nav {
+  grid-area: n;
+}
+
+.kavezo{
+    text-align: center;
+}
+.cafefrei{
+    display: flex;
+    gap: 20px;
+}
+.cafefrei img{
+    width: 50%;
+}
+.newyork{
+    display: flex;
+}
+.newyork img{
+    width: 50%;
+}
+.cafe-info, .newyork-info{
+    width: 50%;
+}
+article {
+  grid-area: ar;
+}
+
+aside {
+  grid-area: as;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+

@@ -4,20 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>közös munka Alizzal</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <h1>Kávézók és kávéfajták</h1>
-    </header>
-    <nav>
-      <ul>
-        <li><a href="#">Kávézók</a></li>
-        <li><a href="#">Kávéfajták</a></li>
-      </ul>
-    </nav>
-
     <main>
+      <header>
+        <h1>Kávézók és kávéfajták</h1>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="#">Kávézók</a></li>
+          <li><a href="#">Kávéfajták</a></li>
+        </ul>
+      </nav>
+
       <article>
+        <div class="kavezo">
         <h2>Kávézók</h2>
         <p>
           A kávézók a mindennapi élet kedvelt találkozóhelyei, ahol az emberek
@@ -29,11 +31,11 @@
           kávézók tehát nemcsak a kávézásról, hanem a közös élményekről és a
           kikapcsolódásról is szólnak.
         </p>
-      </article>
+    </div>
 
       <div class="cafefrei">
         <img src="images/cafefrei.jpg" alt="Cafe Frei" />
-        <article>
+        <div class="cafe-info">
           <h3>Cafe Frei</h3>
           <p>
             A Café Frei egy magyar kávézólánc, amely különleges, a világ
@@ -42,12 +44,12 @@
             is. Hangulatos környezete ideális helyszín baráti beszélgetésekhez
             és kikapcsolódáshoz.
           </p>
-        </article>
+        </div>
       </div>
 
       <div class="newyork">
         <img src="images/newyork.jpg" alt="New York Cafe" />
-        <article>
+        <div class="newyork-info">
           <h3>New York Cafe</h3>
           <p>
             A New York Kávéház Budapest egyik leghíresebb és legszebb kávéháza,
@@ -59,7 +61,7 @@
           </p>
         </article>
       </div>
-    </main>
+     </article>
 
     <aside>
       <h3>Híres budapesti kávéházak</h3>
@@ -69,6 +71,7 @@
         <li>Café Frei</li>
         <li>Espresso Embassy</li>
       </ul>
-    </aside>
+    </aside> 
+</main>
   </body>
 </html>
