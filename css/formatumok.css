@@ -5,36 +5,37 @@
 }
 
 main {
-   background-color: black;
-   color: yellow;
+   background-color: #2b1d14;
+   color:#3e2723;
 }
 
 
 header, nav, article, aside, footer {
-   background-color: brown;
+   background-color: #f5ebe0;
+   border-radius: 10px;
 }
 
 
 nav {
-   background-color: brown;
+   background-color: #f5ebe0;
    padding: 15px;
-   border: 1px solid yellow;
+   border: 1px solid#3e2723;
 }
 
 nav a {
    padding: 10px 5px;
-   border: 1px solid yellow;
+   border: 1px solid#3e2723;
    border-radius: 5px;
    margin: 5px 0px;
    text-decoration: none;
    font-size: 18px;
    font-weight: bold;
-   color: yellow;
+   color:#3e2723;
 }
 
 nav a:hover {
-   background-color: yellow;
-   color: brown;
+   background-color:#3e2723;
+   color: #f5ebe0;
 }
 
 article, aside {
@@ -45,6 +46,7 @@ article, aside {
 
 h1, h2, h3 {
    padding: 5px 0px;
+   color: #6f4e37;
 }
 
 h1 {
