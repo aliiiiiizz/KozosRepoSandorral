@@ -110,10 +110,8 @@ article section:nth-of-type(2) img {
   grid-row: 1; /* az első sorban marad, így a szöveg mellé kerül, nem alá */
 }
 
-/* reszponzivitás
 
-/* tablet és kisebb laptop: az aside az article alá kerül */
-@media (max-width: 1024px) {
+@media (max-width: 1152px) {
   main {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -121,64 +119,23 @@ article section:nth-of-type(2) img {
       "n"
       "ar"
       "as"
-      "f";
-  }
-
-  aside {
-    align-self: stretch; /* teljes szelessegu legyen az article alatt */
+      "f";   
   }
 }
 
-/* mobil: a kép és a szöveg egymás alá kerül */
 @media (max-width: 768px) {
-  main {
-    gap: 5px;
-    padding: 5px;
-  }
-
-  header,
-  nav,
-  article,
-  aside,
-  footer {
-    margin: 0;
-  }
-
-  article,
-  aside {
-    padding: 15px;
-  }
-
+  /* a kép+szöveg blokkok egy oszlopba kerülnek (index.html és masik.html) */
   .gerbaud,
   .newyork,
   article section {
     grid-template-columns: 1fr;
     gap: 15px;
-    margin-bottom: 30px;
   }
 
-  /* a jobbra tett képeket visszaállítjuk, hogy mobilon is felül legyenek */
+  /* a jobbra tett képek visszakerülnek a normál sorrendbe: kép, majd szöveg */
   .newyork img,
   article section:nth-of-type(2) img {
     grid-column: auto;
     grid-row: auto;
-  }
-
-  .kavezo {
-    margin-bottom: 25px;
-  }
-
-  h1 {
-    font-size: 1.6rem;
-  }
-}
-
-/* kis telefon: a menüpontok egymás alá kerülnek */
-@media (max-width: 480px) {
-  nav li,
-  nav a {
-    display: block;
-    margin-right: 0;
-    margin-bottom: 8px;
   }
 }
