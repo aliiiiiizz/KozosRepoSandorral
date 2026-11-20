@@ -109,3 +109,33 @@ article section:nth-of-type(2) img {
   grid-column: 2; /* a jobb oldali oszlopba teszi a képet */
   grid-row: 1; /* az első sorban marad, így a szöveg mellé kerül, nem alá */
 }
+
+
+@media (max-width: 1152px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "h"
+      "n"
+      "ar"
+      "as"
+      "f";   
+  }
+}
+
+@media (max-width: 768px) {
+  /* a kép+szöveg blokkok egy oszlopba kerülnek (index.html és masik.html) */
+  .gerbaud,
+  .newyork,
+  article section {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  /* a jobbra tett képek visszakerülnek a normál sorrendbe: kép, majd szöveg */
+  .newyork img,
+  article section:nth-of-type(2) img {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
